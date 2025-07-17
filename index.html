@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <base href="/cafe-portfolio-new/">
+    <title>Open cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Damion&family=Noto+Serif+JP:wght@200..900&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+
+<!---------------------- メインビジュアル ---------------------->
+<header class="front__mv">
+  <!-- 背景Swiperスライダー -->
+  <div class="swiper front__mv-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide mv-slide">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/pc-mv1.png">
+          <img class="mv-img" src="./assets/img/sp-mv1.png" alt="背景1">
+        </picture>
+      </div>
+      <div class="swiper-slide mv-slide">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/pc-mv2.png">
+          <img class="mv-img" src="./assets/img/sp-mv2.png" alt="背景2">
+        </picture>
+      </div>
+      <div class="swiper-slide mv-slide">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/pc-mv3.png">
+          <img class="mv-img" src="./assets/img/sp-mv3.png" alt="背景3">
+        </picture>
+      </div>
+    </div>
+
+    <!-- ★ページネーションを追加 -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- ★暗いオーバーレイレイヤーを追加 -->
+  <div class="front__mv-overlay"></div>
+
+  <h1 class="front__mv-logo">
+    <div class="front__mv-logo-title"></div>
+    <div class="front__mv-subtitle"></div>
+  </h1>
+
+  <div class="mv__title">
+    <p class="mv__title-text">パスタとコーヒーが<br class="is-sp">とってもおいしい、<br>ほっと落ち着くのんびり空間。</p>
+  </div>
+  <div class="pick-up__news">
+    <div class="pick-up__icon">
+      <img src="./assets/img/pickup-icon.png" alt="">
+    </div>
+    <div class="pickup-label">
+      <img src="./assets/img/pickup-label.png" alt="カテゴリラベル">
+      <span class="pickup-label__text">カテゴリ</span>
+    </div>
+    <div class="pick-up__img">
+        <img src="./assets/img/mv-1.png" alt="">
+    </div>
+    <div class="pick-up-text__box">
+        <div class="pick-up__date">2021.01.01</div>
+        <div class="pick-up-news__text">ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。</div>
+    </div>
+  </div>
+
+  <!-- ハンバーガーメニュー -->
+  <button class="nav__open drawer__icon">
+    <span class="drawer-icon__bar1"></span>
+    <span class="drawer-icon__bar2"></span>
+    <span class="drawer-icon__bar3"></span>
+  </button>
+
+  <!-- ドロワーメニュー -->
+  <div class="drawer__overlay"></div> <!-- ドロワーメニューの背景透過　 (PC,tab時) -->
+  <nav class="drawer">
+    <div class="drawer__logo">
+      <div class="drawer__logo-title"></div>
+      <div class="drawer__subtitle"></div>
+    </div>
+
+    <ul class="nav__menu">
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">TOP</span><span class="nav__link-ja">トップ</span></a></li>
+      <li class="nav__list"><a href="concept-page.html" class="nav__link" target="_blank"><span class="nav__link-en">CONCEPT</span><span class="nav__link-ja">コンセプト</span></a></li>
+      <li class="nav__list"><a href="menu-page.html" class="nav__link" target="_blank"><span class="nav__link-en">MENU</span><span class="nav__link-ja">メニュー</span></a></li>
+      <li class="nav__list"><a href="news-page.html" class="nav__link" target="_blank"><span class="nav__link-en">NEWS</span><span class="nav__link-ja">お知らせ</span></a></li>
+      <li class="nav__list"><a href="shop-list-page.html" class="nav__link" target="_blank"><span class="nav__link-en">SHOP</span><span class="nav__link-ja">店舗情報</span></a></li>
+      <li class="nav__list"><a href="gift-page.html" class="nav__link" target="_blank"><span class="nav__link-en">GIFT</span><span class="nav__link-ja">ギフト・贈り物</span></a></li>
+      <li class="nav__list"><a href="contact-page.html" class="nav__link" target="_blank"><span class="nav__link-en">CONTACT</span><span class="nav__link-ja">お問い合わせ</span></a></li>
+    </ul>
+
+    <!-- sns-sp -->
+    <ul class="sns__link sns__link-sp">
+      <li class="sns__list"><a href="" class="twitter"><img src="./assets/img/Icon awesome-twitter (1).png" alt=""></a></li>
+      <li class="sns__list"><a href="" class="instagram"><img src="./assets/img/Icon awesome-instagram (1).png" alt=""></a></li>
+      <li class="sns__list"><a href="" class="youtube"><img src="./assets/img/Icon awesome-youtube (1).png" alt=""></a></li>
+    </ul>
+  </nav>
+
+<!-- サイドナビ (PC,tab) -->
+  <div class="side__nav">
+    <ul class="side__nav-menu">
+      <li class="side__nav-list"><a href="" class="side__nav-link"><p class="side__nav-link-en">TOP</p><p class="side__nav-link-ja">トップ</p></a></li>
+      <li class="side__nav-list"><a href="concept-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">CONCEPT</p><p class="side__nav-link-ja">コンセプト</p></a></li>
+      <li class="side__nav-list"><a href="menu-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">MENU</p><p class="side__nav-link-ja">メニュー</p></a></li>
+      <li class="side__nav-list"><a href="news-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">NEWS</p><p class="side__nav-link-ja">お知らせ</p></a></li>
+      <li class="side__nav-list"><a href="shop-list-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">SHOP</p><p class="side__nav-link-ja">店舗情報</p></a></li>
+      <li class="side__nav-list"><a href="gift-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">GIFT</p><p class="side__nav-link-ja">ギフト・贈り物</p></a></li>
+      <li class="side__nav-list"><a href="contact-page.html" class="side__nav-link" target="_blank"><p class="side__nav-link-en">CONTACT</p><p class="side__nav-link-ja">お問い合わせ</p></a></li>
+    </ul>
+
+    <!-- sns-pc,tab -->
+     <ul class="side__nav-sns side__nav-sns-pc">
+      <li class="side__nav-sns-list"><a href="" class="side__nav-twitter"><img src="./assets/img/Icon awesome-twitter.png" alt="" width="19.5" height="15.8"></a></li>
+      <li class="side__nav-sns-list"><a href="" class="side__nav-instagram"><img src="./assets/img/Icon awesome-instagram.png" alt="" width="18" height="18"></a></li>
+      <li class="side__nav-sns-list"><a href="" class="side__nav-youtube"><img src="./assets/img/Icon awesome-youtube.png" alt="" width="21" height="14.8"></a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- メインビジュアル背景 -->
+<div class="mv-background"></div>
+
+
+
+<!---------------------- CONCEPT ---------------------->
+<section class="concept">
+ <div class="concept__left">
+   <h2 class="concept__title">CONCEPT</h2>
+   <p class="concept__subtitle">当店のこだわり</p>
+   <div class="concept__text">
+     <p class="concept__text-title">最高のコーヒーと、<br>時の流れを味わうことができる<br>手作りカフェ</p>
+     <p class="concept__text-description">ダミー_国内外から賞賛を<br>受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から<br class="is-pc">料理まで、あらゆる空間が誕生。<br>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデ<br class="is-pc">ニングの設計・建築から料理まで、あらゆる空間が誕生。<br><span>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデ<br class="is-pc">ニングの設計・建築から料理まで、あらゆる空間が誕生。</span></p>
+   </div>
+   <div class="c-section__btn concept__btn">
+     <a href="concept-page.html" target="_blank"><button class="concept-button button" type="button">詳しくはこちら</button></a>
+   </div>
+ </div>
+ <div class="concept__right">
+   <div class="concept__img">
+     <img src="./assets/img/img_concept.png" alt="">
+   </div>
+   <div class="concept__right-bg"></div>
+ </div>
+</section>
+
+
+
+<!---------------------- MENU ---------------------->
+
+<!-- ランチ -->
+<section class="lunch__menu">
+  <div class="lunch-set__title">
+    <h2 class="c-section__title">SPECIAL LUNCH SET</h2>
+    <p class="c-section__subtitle">今月のスペシャルランチセット</p>
+  </div>
+  <div class="menu__choice">
+    <div class="menu__choice-text">
+      <p class="choice__text">お好きなパスタをお選びください</p>
+    </div>
+    <ul class="lunch-menu__lists">
+      <li class="lunch-menu__list1">
+        <a href="" class="lunch-menu__list-img1"><img src="./assets/img/pasta1.png" alt="" width="158" height="158"><p class="lunch-menu__text">テキストテキストの○○<br class="is-pc">○風パスタ</p></a>
+      </li>
+      <li class="lunch-menu__list2">
+        <a href="" class="lunch-menu__list-img2"><img src="./assets/img/pasta2.png" alt="" width="158" height="158"><p class="lunch-menu__text">テキストテキストの○○<br class="is-pc">○風パスタ</p></a>
+      </li>
+      <li class="lunch-menu__list3">
+        <a href="" class="lunch-menu__list-img3"><img src="./assets/img/pasta3.png" alt="" width="158" height="158"><p class="lunch-menu__text">テキストテキストの○○<br class="is-pc">○風パスタ</p></a>
+      </li>
+      <li class="lunch-menu__list4">
+        <a href="" class="lunch-menu__list-img4"><img src="./assets/img/pasta4.png" alt="" width="158" height="158"><p class="lunch-menu__text">テキストテキストの○○<br class="is-pc">○風パスタ</p></a>
+      </li>
+    </ul>
+    <div class="lunch__set">
+      <div class="lunch-set__custom">
+        <div class="set__custom-pasta">
+          <img class="lunch-set__img" src="./assets/img/lunch-set-01.png" alt="" width="88.061" height="73.443">
+          <img class="lunch-set__img-text" src="./assets/img/lunch-set-01-text.png" alt="" width="35.064" height="12.762">
+        </div>
+        <div class="set__custom-salad">
+          <img class="lunch-set__img" src="./assets/img/lunch-set-02.png" alt="" width="76.533" height="74.237">
+          <img class="lunch-set__img-text" src="./assets/img/lunch-set-02-text.png" alt="" width="36.14" height="11.875">
+        </div>
+        <div class="set__custom-drink">
+          <img class="lunch-set__img" src="./assets/img/lunch-set-03.png" alt="" width="75.83" height="74.375">
+          <img class="lunch-set__img-text" src="./assets/img/lunch-set-03-text.png" alt="" width="43.417" height="11.384">
+        </div>
+      </div>
+      <div class="lunch__set-text__box">
+        <div class="lunch__set-text">
+          <p>スペシャルランチセット<br>【選べる3品】</p>
+        </div>
+        <div class="lunch__set-tax">
+          <p class="lunch-set__tax-text">1,280 yen</p>
+        </div>
+        <div class="dot-line">
+          <span class="dot"></span>
+        </div>
+        <div class="lunch-set__times">
+          <p>(11:00 AM〜14:00 PMまで)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- グランドメニュー -->
+<section class="grand__menu l-inner">
+  <div class="grand-menu__title">
+    <h2 class="c-section__title">GRAND MENU</h2>
+    <p class="c-section__subtitle">グランドメニュー</p>
+  </div>
+
+  <!-- パスタ -->
+  <h3 class="grand__menu-genre">パスタ</h3>
+  <div class="genre__lists">
+    <ul class="genre__list">
+      <li class="genre__menu-pasta1">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/pasta2 (1).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">テキストテキストテキストの○○○○風パスタ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-pasta2">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/pasta2 (2).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">テキストテキストの○○風パスタ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-pasta3">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/pasta2 (3).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">テキストテキストの○○風パスタ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- サラダ -->
+  <h3 class="grand__menu-genre">サラダ</h3>
+  <div class="genre__lists">
+    <ul class="genre__list">
+      <li class="genre__menu-salad1">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/salad2 (1).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○風サラダ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-salad2">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/salad2 (2).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○風サラダ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-salad3">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/salad2 (3).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○風サラダ</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- パン & スイーツ -->
+  <h3 class="grand__menu-genre">パン & スイーツ</h3>
+  <div class="genre__lists">
+    <ul class="genre__list">
+      <li class="genre__menu-bread&sweets1">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (1).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-bread&sweets2">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (2).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-bread&sweets3">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (3).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-bread&sweets4">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (4).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-bread&sweets5">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (5).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+      <li class="genre__menu-bread&sweets6">
+        <a href="" class="genre__img">
+          <div class="genre__img-bg">
+            <img src="./assets/img/bread&sweets2 (6).png" alt="" width="148" height="148">
+          </div>
+          <p class="genre__text">○○○○サンド</p>
+          <p class="genre__tax">780 yen</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ドリンク -->
+  <h3 class="grand__menu-genre">ドリンク</h3>
+  <div class="drink__lists">
+    <div class="drink__lists-img">
+      <img src="./assets/img/pc_drink1.png" alt="" width="327" height="327">
+    </div>
+    <!-- (コーヒー) -->
+    <ul class="coffee__genre-box">
+      <p class="coffee__lists-title">コーヒー</p>
+      <li class="coffee__list">
+        <p class="coffee__genre">ブレンド</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+      <li class="coffee__list">
+        <p class="coffee__genre">カフェラテ</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+      <li class="coffee__list">
+        <p class="coffee__genre">豆乳ラテ</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+      <li class="coffee__list">
+        <p class="coffee__genre">カフェモカ</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+      <li class="coffee__list">
+        <p class="coffee__genre">キャラメルラテ</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+      <li class="coffee__list">
+        <p class="coffee__genre">バニララテ</p>
+        <p class="coffee__tax">500 yen</p>
+      </li>
+    </ul>
+    <!-- (紅茶) -->
+    <ul class="black-tea__genre-box">
+      <p class="black-tea__lists-title">紅茶</p>
+      <li class="black-tea__list">
+        <p class="black-tea__genre">ストレート</p>
+        <p class="black-tea__tax">500 yen</p>
+      </li>
+      <li class="black-tea__list">
+        <p class="black-tea__genre">ミルク</p>
+        <p class="black-tea__tax">500 yen</p>
+      </li>
+      <li class="black-tea__list">
+        <p class="black-tea__genre">アップル</p>
+        <p class="black-tea__tax">500 yen</p>
+      </li>
+    </ul>
+    <!-- (ソフトドリンク) -->
+     <ul class="soft-drink__genre-box">
+      <p class="soft-drink__lists-title">ソフトドリンク</p>
+      <li class="soft-drink__list">
+        <p class="soft-drink__genre">バナナ</p>
+        <p class="soft-drink__tax">500 yen</p>
+      </li>
+      <li class="soft-drink__list">
+        <p class="soft-drink__genre">オレンジ</p>
+        <p class="soft-drink__tax">500 yen</p>
+      </li>
+      <li class="soft-drink__list">
+        <p class="soft-drink__genre">アップル</p>
+        <p class="soft-drink__tax">500 yen</p>
+      </li>
+      <li class="soft-drink__list">
+        <p class="soft-drink__genre">マンゴー</p>
+        <p class="soft-drink__tax">500 yen</p>
+      </li>
+      <li class="soft-drink__list">
+        <p class="soft-drink__genre">ミックス</p>
+        <p class="soft-drink__tax">500 yen</p>
+      </li>
+    </ul>
+  </div>
+  <div class="c-section__btn grand__menu-btn">
+     <a href="menu-page.html" target="_blank"><button class="grand__menu-button button" type="button">その他のメニュー</button></a>
+  </div>
+</section>
+
+
+
+<!---------------------- GALLERY ---------------------->
+<section class="gallery">
+  <div class="gallery__title">
+    <h2 class="c-section__title">GALLERY</h2>
+    <p class="c-section__subtitle">ギャラリー</p>
+  </div>
+  <div class="gallery__lists">
+    <ul class="gallery__list">
+      <li class="gallery__img1">
+        <img src="./assets/img/gallery1.png" alt="" width="158" height="158">
+      </li>
+      <li class="gallery__img2">
+        <img src="./assets/img/gallery2.png" alt="" width="158" height="158">
+      </li>
+      <li class="gallery__img3">
+        <img src="./assets/img/gallery3.png" alt="" width="158" height="158">
+      </li>
+      <li class="gallery__img4">
+        <img src="./assets/img/gallery4.png" alt="" width="158" height="158">
+      </li>
+    </ul>
+  </div>
+  <div class="c-section__btn gallery-btn">
+     <a href="#"><button class="gallery__button button" type="button">インスタグラムを見る</button></a>
+  </div>
+</section>
+
+
+
+<!---------------------- NEWS ---------------------->
+<section class="news l-inner">
+  <div class="news__title">
+    <h2 class="c-section__title">NEWS</h2>
+    <p class="c-section__subtitle">お知らせ</p>
+  </div>
+  <div class="news__box">
+    <div class="news__top">
+      <div class="news__top-img">
+        <img src="./assets/img/news-top-img.png" alt="" width="335" height="209">
+      </div>
+      <div class="news__top-title">
+        <p>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。</p>
+      </div>
+      <div class="news__top-text">
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="news__top-date">
+        <p>2021.01.01</p>
+      </div>
+    </div>
+    <div class="news__lists-box">
+      <ul class="news__lists">
+        <li class="news__list1">
+          <div class="news__list-img">
+            <img src="./assets/img/news-list-img.png" alt="" width="158" height="98.75">
+          </div>
+          <div class="news__list-title">
+            <p>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。</p>
+          </div>
+          <div class="news__list-date">
+            <p>2021.01.01</p>
+          </div>
+        </li>
+        <li class="news__list2">
+          <div class="news__list-img">
+            <img src="./assets/img/news-list-img.png" alt="" width="158" height="98.75">
+          </div>
+          <div class="news__list-title">
+            <p>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。</p>
+          </div>
+          <div class="news__list-date">
+            <p>2021.01.01</p>
+          </div>
+        </li>
+        <li class="news__list3">
+          <div class="news__list-img">
+            <img src="./assets/img/news-list-img.png" alt="" width="158" height="98.75">
+          </div>
+          <div class="news__list-title">
+            <p>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。</p>
+          </div>
+          <div class="news__list-date">
+            <p>2021.01.01</p>
+          </div>
+        </li>
+        <li class="news__list4">
+          <div class="news__list-img">
+            <img src="./assets/img/news-list-img.png" alt="" width="158" height="98.75">
+          </div>
+          <div class="news__list-title">
+            <p>ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。</p>
+          </div>
+          <div class="news__list-date">
+            <p>2021.01.01</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="c-section__btn news-btn">
+     <a href="news-page.html" target="_blank"><button class="news__button button" type="button">過去のお知らせ</button></a>
+  </div>
+</section>
+
+
+<!---------------------- footer ---------------------->
+<!---------------------- ACCESS ---------------------->
+<section class="l-access">
+  <div class="l-access__title">
+    <h2 class="c-section__title">ACCESS</h2>
+    <p class="c-section__subtitle">アクセス</p>
+  </div>
+  <div class="l-access__map">
+    <div class="l-access__map-img">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9377896539363!2d139.57722841122637!3d35.7031484724658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee47f6226cc3%3A0x34e6b69989d52a4e!2z5ZCJ56Wl5a-66aeF!5e0!3m2!1sja!2sjp!4v1752575240254!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="l-access__box">
+    <div class="l-access__box-left">
+      <div class="l-access__box-address">
+        <p class="l-access__box-title">住所</p>
+        <p class="l-access__box-text">〒000-0000<br>東京都武蔵野市吉祥寺南町一丁目</p>
+      </div>
+      <div class="l-access__box-tel">
+        <p class="l-access__box-title">TEL</p>
+        <p class="l-access__box-text">0123-456-789</p>
+      </div>
+      <div class="l-access__box-mail">
+        <p class="l-access__box-title">Mail</p>
+        <p class="l-access__box-text">example@mail.com</p>
+      </div>
+    </div>
+    <div class="l-access__box-right">
+      <div class="l-access__box-opening-hours">
+        <p class="l-access__box-title">営業時間</p>
+        <p class="l-access__box-text">7:00〜21:00<br>※ラストオーダー 20:30</p>
+      </div>
+      <div class="l-access__box-closed-day">
+        <p class="l-access__box-title">定休日</p>
+        <p class="l-access__box-text">水曜日</p>
+      </div>
+      <div class="l-access__box-seat">
+        <p class="l-access__box-title">座席</p>
+        <p class="l-access__box-text">テーブル20席 ／ カウンター席6席</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="l-footer">
+  <div class="l-footer__sns-box">
+  <ul class="l-footer__sns-lists">
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__twitter"><img src="./assets/img/Icon awesome-twitter (1).png" alt="" width="26" height="21"></a>
+    </li>
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__instagram"><img src="./assets/img/Icon awesome-instagram (1).png" alt="" width="24" height="24"></a>
+    </li>
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__youtube"><img src="./assets/img/Icon awesome-youtube (1).png" alt="" width="28" height="20"></a>
+    </li>
+  </ul>
+  </div>
+  <div class="l-copyright">
+    <p class="l-copyright__text">©︎2000-2021 open cafe. All Rights Reserved.</p>
+    <div id="page-top" class="l-to__top"><a href="#"></a></div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
