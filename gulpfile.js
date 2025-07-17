@@ -50,3 +50,6 @@ exports.default = gulp.series(
     serve,
     watch
 );
+
+// ✅ Netlify用ビルドタスク（本番ビルド用）
+exports.build = gulp.parallel(compileSass, copyJs);
