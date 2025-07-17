@@ -14,14 +14,16 @@ function compileSass() {
             autoprefixer(),
             cssSorter()
         ]))
-        .pipe(gulp.dest("./public/assets/css/"))
+        .pipe(gulp.dest("./docs/assets/css/"))
+        // .pipe(gulp.dest("./public/assets/css/"))
         .pipe(browserSync.stream());
 }
 
 // ✅ JSのコピー
 function copyJs() {
     return gulp.src("./src/assets/js/**/*.js")
-        .pipe(gulp.dest("./public/assets/js/"))
+        .pipe(gulp.dest("./docs/assets/js/"))
+        // .pipe(gulp.dest("./public/assets/js/"))
         .on('end', browserSync.reload);
 }
 
@@ -29,7 +31,8 @@ function copyJs() {
 function serve(done) {
     browserSync.init({
         server: {
-            baseDir: './public',
+            baseDir: './docs',
+            // baseDir: './public',
             index: 'index.html'
         },
         open: true,
