@@ -1,0 +1,38 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.c-section__title {
+    color: global.$text-color-black;
+    font-family: "Amatic SC";
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-align: center;
+
+    @include mq(pc) {
+        font-size: 52px;
+        letter-spacing: 10.4px;
+    }
+
+    @include mq(tab) {
+        font-size: 52px;
+        letter-spacing: 10.4px
+    }
+}
+
+.c-section__subtitle {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+    @include mq(pc) {
+        font-size: 14px;
+    }
+
+    @include mq(tab) {
+        font-size: 14px;
+    }
+}

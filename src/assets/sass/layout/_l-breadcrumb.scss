@@ -1,0 +1,56 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.l-breadcrumb {
+    margin-left: 10px;
+}
+
+.l-breadcrumb__box {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+
+    @include mq(pc) {
+      margin-left: 90px;
+      margin-top: 10px;
+    }
+
+    @include mq(tab) {
+      margin-left: 45px;
+      margin-top: 10px;
+    }
+}
+
+.l-breadcrumb__text {
+    &::after {
+      position: relative;
+      top: 1px;
+      left: 5px;
+      content: '>';
+      margin: 0 4px;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+}
+
+.l-breadcrumb__text-list {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include mq(pc) {
+      font-size: 14px;
+      
+    }
+
+    @include mq(tab) {
+      font-size: 14px;
+    }
+}

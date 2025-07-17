@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Open cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Damion&family=Noto+Serif+JP:wght@200..900&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+
+<!---------------------- ギフトページ ---------------------->
+<!------------ ヘッダーエリア ------------>
+<header class="l-header contact__header">
+    <div class="l-header__overlay"></div>
+    <div class="l-header__title">CONTACT</div>
+    <div class="l-header__subtitle">
+        <p class="l-header__subtitle-text">お問い合わせ</p>
+    </div>
+</header>
+
+<!-- パンくずリスト -->
+<nav aria-label="パンくずリスト" class="l-breadcrumb">
+  <ol class="l-breadcrumb__box">
+    <li class="l-breadcrumb__text"><a href="/" class="l-breadcrumb__text-list">HOME</a></li>
+    <li class="l-breadcrumb__text"><a href="/concept/" class="l-breadcrumb__text-list">お問い合わせ</a></li>
+  </ol>
+</nav>
+
+<!-- ハンバーガーメニュー -->
+  <button class="nav__open drawer__icon">
+    <span class="drawer-icon__bar1"></span>
+    <span class="drawer-icon__bar2"></span>
+    <span class="drawer-icon__bar3"></span>
+  </button>
+
+  <!-- ドロワーメニュー -->
+  <div class="drawer__overlay"></div> <!-- ドロワーメニューの背景透過　 (PC,tab時) -->
+  <nav class="drawer">
+    <div class="drawer__logo">
+      <div class="drawer__logo-title"></div>
+      <div class="drawer__subtitle"></div>
+    </div>
+
+    <ul class="nav__menu">
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">TOP</span><span class="nav__link-ja">トップ</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">CONCEPT</span><span class="nav__link-ja">コンセプト</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">MENU</span><span class="nav__link-ja">メニュー</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">NEWS</span><span class="nav__link-ja">お知らせ</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">SHOP</span><span class="nav__link-ja">店舗情報</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">GIFT</span><span class="nav__link-ja">ギフト・贈り物</span></a></li>
+      <li class="nav__list"><a href="" class="nav__link"><span class="nav__link-en">CONTACT</span><span class="nav__link-ja">お問い合わせ</span></a></li>
+    </ul>
+
+    <!-- sns-sp -->
+    <ul class="sns__link sns__link-sp">
+      <li class="sns__list"><a href="" class="twitter"><img src="./assets/img/Icon awesome-twitter (1).png" alt=""></a></li>
+      <li class="sns__list"><a href="" class="instagram"><img src="./assets/img/Icon awesome-instagram (1).png" alt=""></a></li>
+      <li class="sns__list"><a href="" class="youtube"><img src="./assets/img/Icon awesome-youtube (1).png" alt=""></a></li>
+    </ul>
+  </nav>
+
+
+<!------------ メインエリア ------------>
+<section class="contact l-inner">
+    <div class="contact__top">
+        <h2 class="contact__title">お問い合わせフォーム</h2>
+    </div>
+    <div class="contact__lead">
+        <p class="contact__lead-text">お問い合わせ内容に応じて、項目をご選択のうえ、お気軽にお問い合わせください。</p>
+    </div>
+    <div class="contact__form">
+        <div class="contact__radio-item">
+            <div class="contact__item">
+                <p class="contact__item-title radio__title">お問い合わせ項目</p>
+            </div>
+            <div class="radio__item">
+                <label><input class="contact__radio" type="radio" name="radio-name"><span class="contact__radio-text">お店のご利用・ご予約について</span></label>
+                <label><input class="contact__radio" type="radio" name="radio-name"><span class="contact__radio-text">ギフト(贈り物)について</span></label>
+                <label><input class="contact__radio" type="radio" name="radio-name"><span class="contact__radio-text">アルバイト応募について</span></label>
+                <label><input class="contact__radio" type="radio" name="radio-name"><span class="contact__radio-text">その他</span></label>
+            </div>
+        </div>
+        <div class="contact__name">
+            <p class="contact__item-title name__title">お名前</p>
+            <input class="contact__area" type="text" placeholder="お名前を入力してください">
+        </div>
+        <div class="contact__mail">
+            <p class="contact__item-title mail__title">メールアドレス</p>
+            <input class="contact__area" type="text" placeholder="example@mail.com">
+        </div>
+        <div class="contact__tel">
+            <p class="contact__item-title tel__title">電話番号</p>
+            <input class="contact__area" type="text" placeholder="09012345678">
+        </div>
+        <div class="contact__content">
+            <p class="contact__item-title content__title">お問い合わせ内容</p>
+            <textarea class="contact__textarea" placeholder="お問い合わせ内容を入力してください"></textarea>
+        </div>
+        <div class="contact__caution">
+            <p class="contact__caution-text">当社は、お客様の個人情報の流出・漏洩の防止、その他個人情報の安全管理のために必要かつ適切な措置を講じるものとし、法令などに正当な理由がある場合を除き、お客様の同意なく目的外での利用および第三者への提供は行いません。</p>
+        </div>
+        <div class="c-section__btn contact__btn">
+           <a href="contact-completion.html"><button class="contact__button button" type="button">送　信</button></a>
+        </div>
+    </div>
+</section>
+
+
+<!---------------------- footer ---------------------->
+<!------------ アクセスフッター ------------>
+<section class="l-access">
+  <div class="l-access__title">
+    <h2 class="c-section__title">ACCESS</h2>
+    <p class="c-section__subtitle">アクセス</p>
+  </div>
+  <div class="l-access__map">
+    <div class="l-access__map-img">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9377896539363!2d139.57722841122637!3d35.7031484724658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee47f6226cc3%3A0x34e6b69989d52a4e!2z5ZCJ56Wl5a-66aeF!5e0!3m2!1sja!2sjp!4v1752575240254!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="l-access__box">
+    <div class="l-access__box-left">
+      <div class="l-access__box-address">
+        <p class="l-access__box-title">住所</p>
+        <p class="l-access__box-text">〒000-0000<br>東京都武蔵野市吉祥寺南町一丁目</p>
+      </div>
+      <div class="l-access__box-tel">
+        <p class="l-access__box-title">TEL</p>
+        <p class="l-access__box-text">0123-456-789</p>
+      </div>
+      <div class="l-access__box-mail">
+        <p class="l-access__box-title">Mail</p>
+        <p class="l-access__box-text">example@mail.com</p>
+      </div>
+    </div>
+    <div class="l-access__box-right">
+      <div class="l-access__box-opening-hours">
+        <p class="l-access__box-title">営業時間</p>
+        <p class="l-access__box-text">7:00〜21:00<br>※ラストオーダー 20:30</p>
+      </div>
+      <div class="l-access__box-closed-day">
+        <p class="l-access__box-title">定休日</p>
+        <p class="l-access__box-text">水曜日</p>
+      </div>
+      <div class="l-access__box-seat">
+        <p class="l-access__box-title">座席</p>
+        <p class="l-access__box-text">テーブル20席 ／ カウンター席6席</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="l-footer">
+  <div class="l-footer__sns-box">
+  <ul class="l-footer__sns-lists">
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__twitter"><img src="./assets/img/Icon awesome-twitter (1).png" alt="" width="26" height="21"></a>
+    </li>
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__instagram"><img src="./assets/img/Icon awesome-instagram (1).png" alt="" width="24" height="24"></a>
+    </li>
+    <li class="l-footer__sns-list">
+      <a href="" class="l-sns-list__youtube"><img src="./assets/img/Icon awesome-youtube (1).png" alt="" width="28" height="20"></a>
+    </li>
+  </ul>
+  </div>
+  <div class="l-copyright">
+    <p class="l-copyright__text">©︎2000-2021 open cafe. All Rights Reserved.</p>
+    <div id="page-top" class="l-to__top"><a href="#"></a></div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

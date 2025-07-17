@@ -1,0 +1,153 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.l-header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-size: 100% auto;
+
+    @include mq(pc) {
+        width: 100%;
+        height: 320px;
+        background-size: 100% auto;
+    }
+
+    @include mq(tab) {
+        height: 320px;
+        background-size: 100% 100%;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        border: 2px solid #fff;
+        width: calc(100% - 12px);
+        height: 108px;
+        top: 6px;
+        left: 6px;
+        z-index: 2;
+
+        @include mq(pc) {
+            position: absolute;
+            content: "";
+            border: 2px solid #fff;
+            width: calc(100% - 12px);
+            height: 308px;
+            top: 6px;
+            left: 6px;
+            z-index: 2;
+        }
+
+        @include mq(tab) {
+            position: absolute;
+            content: "";
+            border: 2px solid #fff;
+            width: calc(100% - 12px);
+            height: 308px;
+            top: 6px;
+            left: 6px;
+            z-index: 2;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        border: 1px solid #fff;
+        width: calc(100% - 22px);
+        height: 98px;
+        top: 11px;
+        left: 11px;
+        z-index: 2;
+
+        @include mq(pc) {
+            position: absolute;
+            content: "";
+            border: 1px solid #fff;
+            width: calc(100% - 22px);
+            height: 298px;
+            top: 11px;
+            left: 11px;
+            z-index: 2;
+        }
+
+        @include mq(tab) {
+            position: absolute;
+            content: "";
+            border: 1px solid #fff;
+            width: calc(100% - 22px);
+            height: 298px;
+            top: 11px;
+            left: 11px;
+            z-index: 2;
+        }
+    }
+}
+
+.l-header__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    z-index: 1;
+}
+
+.l-header__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Amatic SC";
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    padding-top: 32px;
+    position: relative;
+    z-index: 2;
+
+    @include mq(pc) {
+        font-size: 72px;
+        letter-spacing: 14.4px;
+        padding-top: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    @include mq(tab) {
+        font-size: 72px;
+        letter-spacing: 14.4px;
+        padding-top: 100px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.l-header__subtitle-text {
+    color: #FFF;
+    text-align: center;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+
+    @include mq(pc) {
+        font-size: 16px;
+        letter-spacing: 1.28px;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 1.28px;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+}

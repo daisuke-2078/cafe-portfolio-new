@@ -1,0 +1,28 @@
+// 色
+$main-color: #382620;
+$base-color-dark: #EAE0D5;
+$base-color-light: #F3EFEB;
+$accent-color: #F07317;
+$disable-button: #888;
+$text-color-black: #222;
+$text-color-white: #FFF;
+
+// Font
+$font-en: 'Amatic SC', 'Patua One', 'Damion', sans-serif;
+$font-ja: 'Noto Serif JP', sans-serif;
+
+// 幅
+$inner: 1100px;
+$inner-tab: 900px;
+$inner-sp: 335px;
+
+// ブレイクポイント
+$breakpoint-sp: 767px;
+$breakpoint-pc: 1280px;
+
+$breakpoints: (
+  "sp": "(max-width: #{$breakpoint-sp})",
+  "tab": "(min-width: #{$breakpoint-sp + 1}) and (max-width: #{$breakpoint-pc - 1})",
+  "pc": "(min-width: #{$breakpoint-pc})"
+) !default;
+

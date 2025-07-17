@@ -1,0 +1,111 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.shop-list__header {
+    background: url(/assets/img/shop-list-sp.png)no-repeat center center;
+    background-size: 100% auto;
+
+    @include mq(pc) {
+        display: none;
+    }
+
+    @include mq(tab) {
+        display: none;
+    }
+}
+
+.shop__list-breadcrumb {
+    @include mq(pc) {
+        margin-top: 336px;
+    }
+
+    @include mq(tab) {
+        margin-top: 336px;
+    }
+}
+
+.shop__lists {
+    margin-top: 48px;
+
+    @include mq(pc) {
+        max-width: 689px;
+    }
+
+    @include mq(tab) {
+        padding: 0 40px;
+    }
+}
+
+.shop__list {
+    position: relative;
+    padding-left: 11px;
+
+    &:nth-child(n + 2) {
+        margin-top: 60px;
+
+        @include mq(pc) {
+            margin-top: 121px;
+        }
+
+        @include mq(tab) {
+            margin-top: 121px;
+        }
+    }
+
+    &::before {
+        border: 3px solid global.$main-color;
+        content: "";
+        position: absolute;
+        height: 29px;
+        top: 0;
+        left: 0;
+
+        @include mq(pc) {
+            height: 35px;
+        }
+
+        @include mq(tab) {
+            height: 35px;
+        }
+    }
+}
+
+.shop__list-title {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+
+    @include mq(pc) {
+        font-size: 24px;
+    }
+
+    @include mq(tab) {
+        font-size: 24px;
+    }
+}
+
+.shop__list-map {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        margin-top: 24px;
+    }
+
+    @include mq(tab) {
+        margin-top: 24px;
+    }
+}
+
+.shop__list-box {
+    margin-top: 18px;
+
+    @include mq(pc) {
+        margin-top: 22px;
+    }
+
+    @include mq(tab) {
+        margin-top: 22px;
+    }
+}

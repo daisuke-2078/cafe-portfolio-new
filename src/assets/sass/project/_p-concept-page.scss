@@ -1,0 +1,386 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.concept__header {
+    background: url(/assets/img/header-concept_sp.png)no-repeat center center;
+    background-size: 100% auto;
+
+    @include mq(pc) {
+        background: url(/assets/img/header-concept_pc.png)no-repeat center center;
+        background-size: 100% auto;
+    }
+
+    @include mq(tab) {
+        background: url(/assets/img/header-concept_pc.png)no-repeat center center;
+        background-size: 100% 100%;
+    }
+}
+
+.concept__body {
+    width: 100%;
+
+    @include mq(pc) {
+        padding-bottom: 110px;
+    }
+
+    @include mq(tab) {
+        padding-bottom: 110px;
+    }
+}
+
+.concept__body-title {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+
+    @include mq(pc) {
+        font-size: 28px;
+        line-height: 60px; /* 214.286% */
+    }
+
+    @include mq(tab) {
+        font-size: 28px;
+        line-height: 60px; /* 214.286% */
+    }
+}
+
+.concept__text {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+}
+
+// top
+.concept__body-top {
+    @include mq(pc) {
+        display: flex;
+        gap: 71px;
+    }
+
+    @include mq(tab) {
+        display: flex;
+    }
+}
+
+.concept__body-top-left {
+    @include mq(pc) {
+        width: calc(100% - 710px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 300px);
+    }
+}
+
+.concept__body-top-right {
+    @include mq(pc) {
+        width: 640px;
+    }
+
+    @include mq(tab) {
+        width: 640px;
+        margin-left: 84px;
+    }
+}
+
+.concept__top-title {
+    margin-top: 69px;
+
+    @include mq(pc) {
+        margin-top: 145px;
+    }
+
+    @include mq(tab) {
+        margin-top: 65px;
+    }
+
+}
+
+.concept__top-img1 {
+    margin-top: 36px;
+    margin-bottom: 11px;
+
+    @include mq(pc) {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    @include mq(tab) {
+        margin-top: 70px;
+    }
+
+    img {
+        width: 100%;
+
+        @include mq(pc) {
+            width: 640px;
+            height: 400px;
+        }
+
+        @include mq(tab) {
+            width: 498px;
+            height: 300px;
+        }
+    }
+}
+
+.concept__top-img-box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 11px;
+
+    &::after {
+        background: global.$base-color-dark;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        top: 110px;
+        right: -20px;
+        z-index: -1;
+
+        @include mq(pc) {
+            width: 984px;
+            height: 200px;
+            top: 190px;
+            right: -90px;
+        }
+
+        @include mq(tab) {
+            width: 984px;
+            height: 200px;
+            top: 190px;
+        }
+    }
+}
+
+.concept__top-img2,
+.concept__top-img3 {
+    img {
+        width: 162px;
+        height: 162px;
+
+        @include mq(pc) {
+            width: 310px;
+            height: 310px;
+        }
+
+        @include mq(tab) {
+            height: 240px;
+            width: 240px;
+        }
+    }
+}
+
+// center
+.concept__body-center {
+    @include mq(pc) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 71px;
+    }
+
+    @include mq(tab) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 71px;
+    }
+}
+
+.concept__body-center-left {
+    @include mq(pc) {
+        width: 389px;
+    }
+
+    @include mq(tab) {
+        width: 389px;
+    }
+}
+
+.concept__body-center-right {
+    @include mq(pc) {
+        margin-top: 130px;
+    }
+
+    @include mq(tab) {
+        margin-top: 130px;
+    }
+}
+
+.concept__center-title {
+    margin-top: 110px;
+
+    @include mq(pc) {
+        margin-top: 230px;
+    }
+
+    @include mq(tab) {
+        margin-top: 230px;
+    }
+}
+
+.concept__center-img1 {
+    position: relative;
+    margin-top: 36px;
+    margin-left: 52px;
+
+    &::before {
+        background: global.$base-color-dark;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 284px;
+        height: 227px;
+        top: 75px;
+        left: -72px;
+        z-index: -1;
+
+        @include mq(pc) {
+            width: 580px;
+            height: 437px;
+            top: 155px;
+            left: -190px;
+        }
+
+        @include mq(tab) {
+            width: 580px;
+            height: 437px;
+            top: 155px;
+            left: -190px;
+        }
+    }
+
+    img {
+        width: 100%;
+
+        @include mq(pc) {
+            width: 540px;
+            height: 405px;
+        }
+
+        @include mq(tab) {
+            width: 540px;
+            height: 405px;
+        }
+    }
+}
+
+.concept__center-img2 {
+    position: relative;
+    top: -70px;
+    z-index: 1;
+
+    @include mq(pc) {
+        top: -130px;
+        left: -100px;
+    }
+
+    @include mq(tab) {
+        top: -130px;
+        left: -100px;
+    }
+
+    img {
+        width: 183px;
+        height: 138px;
+
+        @include mq(pc) {
+            width: 350px;
+            height: 263px;
+        }
+
+        @include mq(tab) {
+            width: 350px;
+            height: 263px;
+        }
+    }
+}
+
+// bottom
+.concept__body-bottom {
+    @include mq(pc) {
+        display: flex;
+        gap: 71px;
+    }
+
+    @include mq(tab) {
+        display: flex;
+        gap: 71px;
+    }
+}
+
+.concept__body-bottom-left {
+    @include mq(pc) {
+        width: 389px;
+        margin-top: 70px;
+    }
+
+    @include mq(tab) {
+        width: 389px;
+        margin-top: 70px;
+    }
+}
+
+.concept__bottom-title {
+    margin-top: 35px;
+}
+
+.concept__bottom-img {
+    position: relative;
+    margin-top: 36px;
+
+    @include mq(pc) {
+        margin-top: 60px;
+    }
+
+    @include mq(tab) {
+        margin-top: 60px;
+    }
+
+    &::before {
+        background: global.$base-color-dark;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 184px;
+        height: 239px;
+        top: -20px;
+        right: 0;
+        z-index: -1;
+
+        @include mq(pc) {
+            width: 400px;
+            height: 520px;
+            top: -35px;
+            right: -90px;
+        }
+
+        @include mq(tab) {
+            width: 400px;
+            height: 520px;
+            top: -35px;
+        }
+    }
+
+    img {
+        width: 100%;
+
+        @include mq(pc) {
+            width: 640px;
+            height: 400px;
+        }
+
+        @include mq(tab) {
+            width: 640px;
+            height: 400px;
+        }
+    }
+}

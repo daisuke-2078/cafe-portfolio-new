@@ -1,0 +1,235 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.news {
+    position: relative;
+
+    &::before {
+        background: url(/assets/img/news-bg.png)no-repeat center left;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 204.493px;
+        height: 185.071px;
+        top: -124px;
+        left: -42px;
+
+        @include mq(pc) {
+            width: 354px;
+            height: 320px;
+            top: -259px;
+            left: -76px;
+        }
+
+        @include mq(tab) {
+            width: 354px;
+            height: 320px;
+            top: -259px;
+            left: -76px;
+        }
+    }
+}
+
+.news__title {
+    margin-top: 116px;
+}
+
+.news__box {
+    @include mq(pc) {
+        display: flex;
+    }
+
+    @include mq(tab) {
+        display: flex;
+    }
+}
+
+.news__top {
+    margin-top: 40px;
+
+    @include mq(pc) {
+        width: 50%;
+    }
+
+    @include mq(tab) {
+        width: 50%;
+    }
+}
+
+.news__top-img {
+    position: relative;
+    &::before {
+        background: url(/assets/img/pickup-label.png)no-repeat center left;
+        background-size: 100% auto;
+        content: "カテゴリ";
+        position: absolute;
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        padding: 3px 15px 4px;
+        top: 19px;
+        left: -7px;
+    }
+
+    img {
+        width: 100%;
+
+        @include mq(pc) {
+            width: 510px;
+            height: 319px;
+        }
+    }
+}
+
+.news__top-title {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+
+    @include mq(pc) {
+        width: 510px;
+    }
+}
+
+.news__top-text {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    line-height: 18px; /* 150% */
+
+    @include mq(pc) {
+        width: 510px;
+    }
+}
+
+.news__top-date {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.news__lists-box {
+    @include mq(pc) {
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    @include mq(tab) {
+        width: 626px;
+        margin-top: 40px;
+    }
+}
+
+.news__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mq(tab) {
+        gap: 0px 10px;
+        justify-content: space-around;
+    }
+}
+
+.news__list1,
+.news__list2 {
+    @include mq(pc) {
+        margin-bottom: 22px;
+    }
+
+    @include mq(tab) {
+        margin-bottom: 22px;
+    }
+}
+
+.news__list1,
+.news__list2,
+.news__list3,
+.news__list4 {
+    @include mq(tab) {
+        width: calc(100% - 316px);
+    }
+}
+
+.news__list-img {
+    position: relative;
+    &::before {
+        background: url(/assets/img/pickup-label.png)no-repeat center left;
+        background-size: 100% auto;
+        content: "カテゴリ";
+        position: absolute;
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        padding: 2px 11px 3px;
+        top: 10px;
+        left: -8px;
+    }
+
+    img {
+        width: 158px;
+        height: 98.75px;
+
+        @include mq(pc) {
+            width: 255px;
+            height: 159px;
+        }
+
+        @include mq(tab) {
+            width: 200px;
+            height: auto;
+        }
+    }
+}
+
+.news__list-title {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 150% */
+    width: 158px;
+
+    @include mq(pc) {
+        width: 255px;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+    }
+}
+
+.news__list-date {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.news-btn {
+    margin: 46px auto 61px;
+
+    @include mq(pc) {
+        margin: 60px auto 80px;
+    }
+
+    @include mq(tab) {
+        margin: 60px auto 80px;
+    }
+}
+
+.news__button {
+    padding: 24px 89px 25px;
+}

@@ -1,0 +1,18 @@
+@use "../global/variables" as global;
+
+body {
+  font-family: global.$font-ja;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden; // 念のために
+  background: global.$base-color-light;
+  color: global.$text-color-black;
+}
+
+// * {
+//   outline: 1px solid red; /* 枠を表示して構造を可視化 */
+// }
+
+// body {
+//   border: 5px solid blue;
+// }

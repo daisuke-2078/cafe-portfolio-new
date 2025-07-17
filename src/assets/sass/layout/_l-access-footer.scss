@@ -1,0 +1,344 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.l-access {
+    background: global.$base-color-dark;
+    width: 100%;
+    height: 910px;
+    margin-top: 140px;
+    padding: 0 20px;
+
+    @include mq(pc) {
+        padding: 0 296px;
+    }
+
+    @include mq(tab) {
+        padding: 100px;
+        height: auto;
+    }
+}
+
+.l-access__title {
+    padding-top: 81px;
+    position: relative;
+
+    &::before {
+        background: url(/assets/img/access-icon.png)no-repeat center left;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 172.134px;
+        top: -43px;
+        left: -48px;
+
+        @include mq(pc) {
+            width: 232.912px;
+            height: 200.002px;
+            left: 33px;
+            top: -49px;
+        }
+
+        @include mq(tab) {
+            width: 232.912px;
+            height: 200.002px;
+            left: 0px;
+            top: -49px;
+        }
+    }
+
+    &::after {
+        background: url(/assets/img/access-bg.png)no-repeat center right;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 190.5px;
+        height: 180px;
+        top: -104px;
+        right: -20px;
+
+        @include mq(pc) {
+            width: 389px;
+            height: 359px;
+            top: -175px;
+            right: -295px;
+        }
+
+        @include mq(tab) {
+            width: 300px;
+            height: 300px;
+            top: -175px;
+            right: -100px;
+        }
+    }
+}
+
+.l-access__map {
+    position: relative;
+    margin-top: 43px;
+    background: #fff;
+    width: 100%;
+    height: 188px;
+
+    @include mq(pc) {
+        width: 100%;
+        height: 387px;
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 80px);
+        height: auto;
+        margin: 43px auto 0;
+    }
+}
+
+.l-access__map-img {
+    padding: 5px;
+
+    @include mq(pc) {
+        padding: 10px;
+    }
+
+    @include mq(tab) {
+        padding: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 178px;
+
+        @include mq(pc) {
+            width: 100%;
+            height: 367px;
+        }
+
+        @include mq(tab) {
+            width: 100%;
+            height: 367px;
+        }
+    }
+}
+
+.l-access__box {
+    margin-top: 42px;
+
+    @include mq(pc) {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.l-access__box-left {
+    @include mq(pc) {
+        width: 50%;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+    }
+}
+
+.l-access__box-right {
+    @include mq(pc) {
+        width: 50%;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+    }
+}
+
+.l-access__box-address {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-tel {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-mail {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-opening-hours {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-closed-day {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-seat {
+    display: flex;
+    border-bottom: 1px solid global.$text-color-black;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include mq(pc) {
+        width: calc(100% - 10px);
+    }
+
+    @include mq(tab) {
+        width: calc(100% - 100px);
+        margin: 0 auto 5px;
+    }
+}
+
+.l-access__box-title {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    width: 56px;
+}
+
+.l-access__box-text {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    margin-left: 24px;
+}
+
+.l-footer {
+    background: global.$main-color;
+    width: 100%;
+    height: 147px;
+    position: relative;
+
+    &::before {
+        background: url(/assets/img/footer-beans.png)no-repeat center left;
+        background-size: 100% auto;
+        content: "";
+        position: absolute;
+        width: 128px;
+        height: 114px;
+        top: -55px;
+        left: -35px;
+
+        @include mq(pc) {
+            background: url(/assets/img/bg_coffee-beans.png)no-repeat center left;
+            background-size: 100% auto;
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 287px;
+            top: -142px;
+            left: -62px;
+        }
+
+        @include mq(tab) {
+            background: url(/assets/img/bg_coffee-beans.png)no-repeat center left;
+            background-size: 100% auto;
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: -80px;
+            left: -62px;
+        }
+    }
+}
+
+.l-footer__sns-box {
+    display: flex;
+}
+
+.l-footer__sns-lists {
+    display: flex;
+    margin: 40px auto 0;
+}
+
+.l-sns-list__instagram {
+    margin-left: 30px;
+}
+
+.l-sns-list__youtube {
+    margin-left: 30px;
+}
+
+.l-copyright {
+    margin-top: 40px;
+}
+
+.l-copyright__text {
+    color: #FFF;
+    text-align: center;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px; /* 200% */
+    position: relative;
+}
+
+.l-to__top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  background: url(/assets/img/to-top.png) no-repeat center;
+  background-size: 100% auto;
+}

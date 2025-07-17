@@ -1,0 +1,107 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.gallery {
+    background: global.$base-color-dark;
+    width: 100%;
+    height: 725px;
+    margin-top: 180px;
+    padding: 0 10px;
+    position: relative;
+
+    @include mq(pc) {
+        padding: 0 90px;
+    }
+
+    @include mq(tab) {
+        padding: 0 150px;
+        height: 800px;
+    }
+
+    &::before {
+        background: url(/assets/img/gallery-icon.png)no-repeat center left;
+        background-size: 100% auto;
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 104.168px;
+        top: -50px;
+        left: -18px;
+
+        @include mq(pc) {
+            top: -25px;
+            left: 296px;
+            width: 258px;
+            height: 120px;
+        }
+
+        @include mq(tab) {
+            width: 258px;
+            height: 120px;
+        }
+    }
+}
+
+.gallery__title {
+    padding-top: 60px;
+}
+
+.gallery__lists {
+    margin-top: 40px;
+}
+
+.gallery__list {
+    display: grid;
+    grid-template-columns: 158px 158px;
+    justify-content: space-around;
+
+    @include mq(pc) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include mq(tab) {
+        grid-template-columns: 185px 185px;
+        grid-template-rows: 200px 200px;
+        gap: 20px 0px;
+    }
+}
+
+.gallery__img1,
+.gallery__img2,
+.gallery__img3,
+.gallery__img4 {
+    img {
+        @include mq(pc) {
+            width: 257px;
+            height: 257px;
+        }
+
+        @include mq(tab) {
+            width: 185px;
+            height: auto;
+        }
+    }
+}
+
+.gallery__img1,
+.gallery__img2 {
+    margin-bottom: 19px;
+}
+
+.gallery-btn {
+    margin: 56px auto 100px;
+
+    @include mq(pc) {
+        margin: 60px auto 80px;
+    }
+
+    @include mq(tab) {
+        margin: 60px auto 80px;
+    }
+}
+
+.gallery__button {
+    padding: 24px 62px 25px 68px;
+}

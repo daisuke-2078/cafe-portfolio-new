@@ -1,0 +1,427 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.contact__header {
+    background: url(/assets/img/contact-sp.png)no-repeat center center;
+    background-size: 100% auto;
+
+    @include mq(pc) {
+        background: url(/assets/img/contact-pc.png)no-repeat center center;
+        background-size: 100% auto;
+    }
+
+    @include mq(tab) {
+        background: url(/assets/img/contact-pc.png)no-repeat center center;
+    }
+}
+
+.contact {
+    margin-top: 48px;
+
+    @include mq(pc) {
+        max-width: 688px;
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+        margin-top: 80px;
+    }
+}
+
+.contact__title {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+
+    @include mq(pc) {
+        font-size: 28px;
+    }
+
+    @include mq(tab) {
+        font-size: 28px;
+    }
+}
+
+.contact__lead {
+    margin-top: 20px;
+
+    @include mq(tab) {
+        text-align: center;
+    }
+}
+
+.contact__lead-text {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+
+    @include mq(pc) {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    @include mq(tab) {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
+
+.contact__form {
+    margin-top: 60px;
+
+    @include mq(pc) {
+        margin-top: 81px;
+    }
+
+    @include mq(tab) {
+        margin-top: 81px;
+    }
+}
+
+.contact__radio-item {
+    @include mq(pc) {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 40px;
+    }
+
+    @include mq(tab) {
+        margin-bottom: 40px;
+    }
+}
+
+.radio__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.contact__item {
+    margin-bottom: 13px;
+}
+
+.contact__item-title {
+    position: relative;
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+
+    @include mq(pc) {
+        width: 170px;
+        margin-right: 13px;
+    }
+
+    @include mq(tab) {
+        width: 170px;
+        margin-right: 13px;
+    }
+}
+
+.radio__title {
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 2px;
+        background: #F07317;
+        width: 34px;
+        height: 19px;
+        top: 4px;
+        left: 134px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "必須";
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: normal;
+        top: 5px;
+        left: 139px;
+    }
+}
+
+.name__title {
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 2px;
+        background: #F07317;
+        width: 34px;
+        height: 19px;
+        top: 4px;
+        left: 55px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "必須";
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: normal;
+        top: 5px;
+        left: 61px;
+    }
+}
+
+.mail__title {
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 2px;
+        background: #F07317;
+        width: 34px;
+        height: 19px;
+        top: 4px;
+        left: 118px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "必須";
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: normal;
+        top: 5px;
+        left: 124px;
+    }
+}
+
+.content__title {
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 2px;
+        background: #F07317;
+        width: 34px;
+        height: 19px;
+        top: 4px;
+        left: 134px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "必須";
+        color: #FFF;
+        font-family: global.$font-ja;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: normal;
+        top: 5px;
+        left: 139px;
+    }
+}
+
+.contact__radio {
+    display: none;
+
+    + span {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 0.2em 0;
+        padding-left: 34px;
+        margin-bottom: 16px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border: 1px solid global.$main-color;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 6px;
+            width: 12px;
+            height: 12px;
+            padding: 2px;
+            background: #F07317;;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            opacity: 0;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    &:checked + span::after {
+        opacity: 1;
+    }
+}
+
+.contact__radio-text {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: inherit;
+    font-family: inherit;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    border-radius: 6px;
+    border: 1px solid global.$main-color;
+    background: #FFF;
+    padding: 12px 0 13px 16px;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &::placeholder {
+        color: #CCC;
+        font-family: global.$font-ja;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    @include mq(pc) {
+        width: 475px;
+    }
+}
+
+.contact__name {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        display: flex;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__area {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        display: flex;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__mail {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        display: flex;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__tel {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        display: flex;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__content {
+    margin-top: 20px;
+
+    @include mq(pc) {
+        display: flex;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: none;
+	border-radius: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: 1em;
+	height: 200px;
+	padding: 0.4em 0.8em;
+	width: 100%;
+    border-radius: 6px;
+    border: 1px solid global.$main-color;
+    background: #FFF;
+
+    &::placeholder {
+        color: #CCC;
+        font-family: global.$font-ja;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    @include mq(pc) {
+        width: 475px;
+    }
+}
+
+.textarea-text:focus {
+	border: 1px solid rgba(0, 0, 0, 0.32);
+	box-shadow: none;
+	outline: none;
+}
+
+.contact__caution {
+    margin-top: 10px;
+}
+
+.contact__caution-text {
+    color: global.$main-color;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+
+    @include mq(pc) {
+        line-height: normal;
+    }
+}
+
+.contact__btn {
+    margin: 38px auto 60px;
+}
+
+.contact__button {
+    padding: 24px 120px 25px 121px;
+}

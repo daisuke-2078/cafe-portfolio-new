@@ -1,0 +1,16 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.l-inner {
+  width: 100%;
+  padding-inline: 15px;        // ← スマホの余白
+  margin-inline: auto;
+
+  @include mq(tab) {
+    max-width: global.$inner-tab; // タブレット用（必要なら）
+  }
+
+  @include mq(pc) {
+    max-width: global.$inner;     // PCのときだけ1100pxなど
+  }
+}

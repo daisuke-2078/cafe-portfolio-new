@@ -1,0 +1,9 @@
+@use "variables" as v;
+@use "sass:map";
+
+// メディアクエリー
+@mixin mq($breakpoint: pc) {
+    @media #{map.get(v.$breakpoints,$breakpoint)} {
+        @content;
+    }
+}

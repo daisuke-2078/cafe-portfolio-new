@@ -1,0 +1,248 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.is-pc {
+    display: none;
+
+    @include mq(pc) {
+        display: inline;
+    }
+
+    @include mq(tab) {
+        display: inline;
+    }
+}
+
+.concept {
+    @include mq(pc) {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+      //   max-width: 1280px;
+      //   margin: -270px auto 0px;
+        margin-top: -270px;
+    }
+
+    @include mq(tab) {
+        display: flex;
+        position: relative;
+      //   max-width: 1280px;
+      //   margin: -270px auto 0px;
+        margin-top: -270px;
+    }
+}
+
+.concept__left {
+    padding: 0 20px;
+    margin-top: 120px;
+
+    &::before {
+      background: url(/assets/img/bg_coffee-beans.png)no-repeat left top;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      width: 145px;
+      height: 130px;
+      top: 642px;
+      right: 0;
+
+      @include mq(pc) {
+          width: 296px;
+          height: 265px;
+          top: -120px;
+      }
+
+      @include mq(tab) {
+          height: 300px;
+          top: -120px;
+          width: 335px;
+      }
+    }
+
+    @include mq(pc) {
+      margin-top: 112px;
+      width: 50%;
+      margin-left: 80px;
+      padding: 0;
+    }
+
+    @include mq(tab) {
+      margin-top: 112px;
+      width: 50%;
+      margin-left: 20px;
+      padding: 0;
+    }
+}
+
+.concept__title {
+    color: global.$text-color-black;
+    font-family: "Amatic SC";
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: 4px;
+
+    @include mq(pc) {
+        font-size: 52px;
+        letter-spacing: 10.4px;
+    }
+
+    @include mq(tab) {
+        font-size: 52px;
+        letter-spacing: 10.4px;
+    }
+}
+
+.concept__subtitle {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+
+    @include mq(pc) {
+        font-size: 14px;
+    }
+
+    @include mq(tab) {
+        font-size: 14px;
+    }
+}
+
+.concept__text {
+    margin-top: 34px;
+}
+
+.concept__text-title {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+
+    @include mq(pc) {
+        font-size: 28px;
+        line-height: 60px; /* 214.286% */
+    }
+
+    @include mq(tab) {
+        font-size: 28px;
+        line-height: 60px;
+    }
+}
+
+.concept__text-description {
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+
+    @include mq(pc) {
+        width: 470px;
+    }
+
+    span {
+        display: block;
+        margin-top: 45px;
+    }
+}
+
+.concept__btn {
+    margin: 56px auto 20px;
+
+        @include mq(pc) {
+            margin: 40px 0 6px;
+        }
+
+        @include mq(tab) {
+            margin: 40px 0 6px;
+        }
+}
+
+.concept-button {
+    padding: 24px 89px 25px;
+}
+
+.concept__right {
+  height: auto; // ← 高さ指定も基本的に不要
+  margin-top: 80px;
+  position: relative;
+  margin-bottom: 235px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: global.$base-color-dark;
+    background-size: 100% auto;
+    height: 100px;
+    z-index: -1;
+    top: calc(100% - 30px);
+    width: calc(100% - 20px);
+
+    @include mq(pc) {
+        height: 300px;
+        top: 531px;
+        left: -85px;
+        width: calc(50vw + 110%);
+    }
+
+    @include mq(tab) {
+        height: 300px;
+        top: 531px;
+        left: -85px;
+        width: calc(100% + 65px);
+    }
+  }
+
+  &::after {
+    background: url(/assets/img/bg_coffee-leaves.png)no-repeat left center;
+    background-size: 100% auto;
+    content: "";
+    position: absolute;
+    width: 119px;
+    height: 135px;
+    right: 0;
+
+    @include mq(pc) {
+        width: 201px;
+        height: 228px;
+        left: 970px;
+        top: 930px;
+    }
+
+    @include mq(tab) {
+        height: 228px;
+        width: 201px;
+    }
+  }
+
+  @include mq(pc) {
+    width: 45%;
+  }
+
+  @include mq(tab) {
+    width: 50%;
+  }
+}
+
+.concept__img {
+
+    img {
+        width: calc(100% - 60px);
+
+        @include mq(tab) {
+            width: 100%;
+        }
+    }
+
+    @include mq(pc) {
+        width: 100%;
+        height: 764px;
+    }
+
+    @include mq(tab) {
+        height: auto;
+        padding: 0 20px;
+        margin-top: 120px;
+    }
+}

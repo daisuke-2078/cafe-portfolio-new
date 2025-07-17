@@ -1,0 +1,46 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.c-section__btn {
+    position: relative;
+    width: 290px;
+    height: 72px;
+
+    // 逆L字の装飾
+    &::before {
+      content: "";
+      position: absolute;
+      right: -5px;
+      top: 6px;
+      width: 100%;
+      height: 100%;
+      border-right: 1px solid global.$text-color-black; // 色や太さは調整
+      border-bottom: 1px solid global.$text-color-black;
+      pointer-events: none; // クリックを邪魔しないように
+      box-sizing: border-box;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 31px;
+        right: 10px;
+        background: url(/assets/img/arrow-right.png)no-repeat center right / 7.81px 13.6px;
+        width: 7.81px;
+        height: 13.6px;
+    }
+}
+
+.button {
+    background: global.$text-color-black;
+    color: #FFF;
+    font-family: global.$font-ja;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    transition: transform 0.1s ease-in-out; // ← 追加
+
+    &:active {
+        transform: translate(5px, 6px);
+    }
+}

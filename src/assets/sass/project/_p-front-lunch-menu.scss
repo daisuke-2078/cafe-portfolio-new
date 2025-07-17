@@ -1,0 +1,667 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as *;
+
+.lunch__menu {
+    background: global.$base-color-dark;
+    width: 100%;
+    height: 1055px;position: relative;
+
+    @include mq(pc) {
+        height: 1075px;
+        z-index: -1;
+        margin-top: 58px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include mq(tab) {
+        height: 1240px;
+        z-index: -1;
+        margin-top: 58px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    &::before {
+        background: url(/assets/img/lunch-menu-bg.png)no-repeat center;
+        background-size: 100% auto;
+        content: "";
+        width: 200px;
+        height: 93.591px;
+        position: absolute;
+        right: 0px;
+        top: -41px;
+
+        @include mq(pc) {
+            width: 299px;
+            height: 140px;
+            z-index: 1;
+            top: 166px;
+            right: 30px;
+        }
+
+        @include mq(tab) {
+            height: 140px;
+            right: 18px;
+            top: 144px;
+            width: 220px;
+            z-index: 1;
+        }
+    }
+
+    &::after {
+        background: url(/assets/img/lunch-menu-bg-text.png)no-repeat center;
+        background-size: 100% auto;
+        content: "";
+        width: 140.226px;
+        height: 32.712px;
+        position: absolute;
+        top: -13px;
+        right: 27px;
+
+        @include mq(pc) {
+            width: 210px;
+            height: 58px;
+            top: 210px;
+            right: 80px;
+
+        }
+
+        @include mq(tab) {
+            height: 58px;
+            right: 43px;
+            top: 185px;
+            width: 169px;
+        }
+    }
+}
+
+.lunch-set__title {
+    display: inline-block;
+    margin-top: 56px;
+    width: 100%;
+
+    @include mq(pc) {
+        width: 100%;
+        margin: 81px 0 0 0;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+        margin: 81px 0 0 0;
+    }
+}
+
+.menu__choice {
+    background: #fff;
+    width: 100%;
+    height: 802px;
+    position: relative;
+    padding: 0 10px;
+
+    @include mq(pc) {
+        width: 100%;
+        padding: 0 40px;
+        height: 783px;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+        padding: 0 40px;
+        height: 835px;;
+    }
+}
+
+.menu__choice-text {
+    background: global.$text-color-black;
+    width: 255.269px;
+    height: 32.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -65%);
+
+    @include mq(pc) {
+        width: 308px;
+        height: 37px;
+        margin-top: 4px;
+    }
+
+    @include mq(tab) {
+        width: 308px;
+        height: 37px;
+        margin-top: 4px;
+    }
+
+    &::before {
+        background: url(/assets/img/menu-choice-text1.png)no-repeat left center;
+        background-size: 100% auto;
+        content: "";
+        width: 28.653px;
+        height: 32.3px;
+        position: absolute;
+        left: -18px;
+        top: 5px;
+
+        @include mq(pc) {
+            width: 35px;
+            height: 37px;
+        }
+
+        @include mq(tab) {
+            width: 35px;
+            height: 37px;
+        }
+    }
+
+    &::after {
+        background: url(/assets/img/menu-choice-text2.png)no-repeat left center;
+        background-size: 100% auto;
+        content: "";
+        width: 28.653px;
+        height: 32.3px;
+        position: absolute;
+        right: -18px;
+        top: 5px;
+
+        @include mq(pc) {
+            width: 35px;
+            height: 37px;
+        }
+
+        @include mq(tab) {
+            width: 35px;
+            height: 37px;
+        }
+    }
+}
+
+.choice__text {
+    color: #FFF;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 700;
+
+    @include mq(pc) {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    @include mq(tab) {
+        font-size: 18px;
+        line-height: normal;
+    }
+}
+
+.lunch-menu__lists {
+    margin-top: 41px;
+    padding-top: 40px;
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 157px 157px;
+    grid-template-rows: 157px 157px;
+    gap: 68px 0;
+
+    @include mq(pc) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include mq(tab) {
+        display: grid;
+        gap: 68px 0;
+        grid-template-columns: 285px 285px;
+        grid-template-rows: 225px 225px;
+    }
+}
+
+.lunch-menu__list1,
+.lunch-menu__list2,
+.lunch-menu__list3,
+.lunch-menu__list4 {
+    display: block;
+
+    @include mq(pc) {
+        img {
+        width: 260px;
+        height: 260px;
+        }
+    }
+
+    @include mq(tab) {
+        margin-bottom: 25px;
+        padding-left: 38px;
+        padding-right: 38px;
+
+        img {
+        height: 210px;
+        width: 210px;
+        }
+    }
+
+    &:nth-child(n+3) {
+        @include mq(pc) {
+            margin-top: 0;
+        }
+
+        @include mq(tab) {
+            margin-top: 0;
+        }
+    }
+}
+
+.lunch-menu__list2 {
+    @include mq(pc) {
+        padding-top: 55px;
+    }
+}
+
+.lunch-menu__list4 {
+    @include mq(pc) {
+        padding-top: 55px;
+    }
+}
+
+.lunch-menu__list-img1,
+.lunch-menu__list-img2,
+.lunch-menu__list-img3,
+.lunch-menu__list-img4 {
+    position: relative;
+
+    &::before {
+        background: global.$text-color-black;
+        content: "";
+        background-size: 100% auto;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 40px;
+
+        @include mq(pc) {
+            width: 49px;
+            height: 49px;
+        }
+
+        @include mq(tab) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.lunch-menu__list-img1 {
+    &::after {
+        content: "A";
+        color: #FFF;
+        text-align: center;
+        font-family: "Patua One";
+        font-size: 19px;
+        line-height: normal;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+
+        @include mq(pc) {
+            font-size: 32px;
+            top: 44px;
+            left: 13px;
+        }
+
+        @include mq(tab) {
+            font-size: 32px;
+            top: 38px;
+            left: 7px;
+        }
+    }
+}
+
+.lunch-menu__list-img2 {
+    &::after {
+        content: "B";
+        color: #FFF;
+        text-align: center;
+        font-family: "Patua One";
+        font-size: 19px;
+        line-height: normal;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+
+        @include mq(pc) {
+            font-size: 32px;
+            top: 44px;
+            left: 13px;
+        }
+
+        @include mq(tab) {
+            font-size: 32px;
+            top: 38px;
+            left: 7px;
+        }
+    }
+}
+
+.lunch-menu__list-img3 {
+    &::after {
+        content: "C";
+        color: #FFF;
+        text-align: center;
+        font-family: "Patua One";
+        font-size: 19px;
+        line-height: normal;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+
+        @include mq(pc) {
+            font-size: 32px;
+            top: 44px;
+            left: 13px;
+        }
+
+        @include mq(tab) {
+            font-size: 32px;
+            top: 38px;
+            left: 7px;
+        }
+    }
+}
+
+.lunch-menu__list-img4 {
+    &::after {
+        content: "D";
+        color: #FFF;
+        text-align: center;
+        font-family: "Patua One";
+        font-size: 19px;
+        line-height: normal;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+
+        @include mq(pc) {
+            font-size: 32px;
+            top: 44px;
+            left: 13px;
+        }
+
+        @include mq(tab) {
+            font-size: 32px;
+            top: 38px;
+            left: 7px;
+        }
+    }
+}
+
+.lunch-menu__text {
+    width: 128px;
+    color: global.$text-color-black;
+    font-family: global.$font-ja;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    justify-self: self-end;
+
+    @include mq(sp) {
+        .is-pc {
+            display: none;
+        }
+    }
+
+    @include mq(pc) {
+        font-size: 18px;
+        width: 199px;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    @include mq(tab) {
+        font-size: 12px;
+        width: 160px;
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+
+.lunch__set {
+    background: #F7F6F4;;
+    height: 293px;
+    border-radius: 8px;
+    padding: 0 8px;
+    width: 335px;
+    margin: 70px auto 0;
+
+    @include mq(pc) {
+        width: 100%;
+        margin-top: 97px;
+        display: flex;
+        height: 230px;
+        padding: 0;
+    }
+
+    @include mq(tab) {
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        height: 160px;
+        padding: 0;
+        justify-content: center;
+        margin-top: 70px;
+    }
+}
+
+.lunch-set__custom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+
+    @include mq(pc) {
+        margin-left: 65px;
+        padding-top: 25px;
+    }
+
+    @include mq(tab) {
+        margin-left: 20px;
+        padding-top: 25px;
+    }
+}
+
+.lunch-set__img {
+    @include mq(pc) {
+        width: 172px;
+        height: 145px;
+    }
+}
+
+.lunch-set__img-text {
+    display: block;
+    margin: 8px auto 0;
+
+    @include mq(pc) {
+        width: 68px;
+        height: 20px;
+    }
+}
+
+.set__custom-salad {
+    position: relative;
+
+    @include mq(pc) {
+        margin-left: 89px;
+    }
+
+    @include mq(tab) {
+        margin-left: 89px;
+    }
+
+    &::before {
+        background: url(/assets/img/plus-icon.png) no-repeat center;
+        background-size: 100% auto;
+        content: "";
+        width: 13.359px;
+        height: 13.323px;
+        position: absolute;
+        top: 35px;
+        right: 89px;
+
+        @include mq(pc) {
+            width: 26px;
+            height: 26px;
+            top: 60px;
+            right: 207px;
+        }
+
+        @include mq(tab) {
+            height: 26px;
+            right: 110px;
+            top: 35px;
+            width: 26px;
+        }
+    }
+
+    &::after {
+        background: url(/assets/img/plus-icon.png) no-repeat center;
+        background-size: 100% auto;
+        content: "";
+        width: 13.359px;
+        height: 13.323px;
+        position: absolute;
+        top: 35px;
+        left: 89px;
+
+        @include mq(pc) {
+            width: 26px;
+            height: 26px;
+            top: 60px;
+            left: 205px;
+        }
+
+        @include mq(tab) {
+            height: 26px;
+            left: 110px;
+            top: 35px;
+            width: 26px;
+        }
+    }
+}
+
+.set__custom-drink {
+    @include mq(pc) {
+        margin-left: 95px;
+    }
+
+    @include mq(tab) {
+        margin-left: 95px;
+    }
+}
+
+.lunch__set-text__box {
+    @include mq(pc) {
+        margin-left: 60px;
+    }
+
+    @include mq(tab) {
+        padding-top: 10px;
+    }
+}
+
+.lunch__set-text {
+    color: global.$text-color-black;
+    text-align: center;
+    font-family: global.$font-ja;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+
+    p {
+        margin: 0;
+    }
+
+    @include mq(pc) {
+        width: 220px;
+        height: 58px;
+        text-align: right;
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    @include mq(tab) {
+        width: 220px;
+        height: 58px;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        margin: 0;
+    }
+}
+
+.lunch__set-tax {
+    color: global.$text-color-black;
+    text-align: center;
+    font-family: Damion;
+    font-size: 40px;
+    line-height: normal;
+
+    p {
+        margin: 0;
+    }
+
+    @include mq(pc) {
+        width: 213px;
+        height: 82px;
+        font-size: 60px;
+    }
+
+    @include mq(tab) {
+        width: 213px;
+        height: 45px;
+        font-size: 40px;
+        line-height: 0.8;
+    }
+}
+
+.dot-line {
+    width: 148px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 0.3;
+
+    @include mq(pc) {
+      width: 210px;
+    }
+}
+
+.dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    background-color: global.$text-color-black;
+    border-radius: 50%;
+}
+
+.lunch-set__times {
+    color: global.$text-color-black;
+    text-align: center;
+    font-family: global.$font-ja;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @include mq(pc) {
+        text-align: right;
+        font-size: 14px;
+    }
+
+    @include mq(tab) {
+        text-align: center;
+        font-size: 12px;
+    }
+}
