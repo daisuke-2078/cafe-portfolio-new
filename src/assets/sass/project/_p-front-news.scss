@@ -5,7 +5,7 @@
     position: relative;
 
     &::before {
-        background: url(/assets/img/news-bg.png)no-repeat center left;
+        background: url("../img/news-bg.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -59,7 +59,7 @@
 .news__top-img {
     position: relative;
     &::before {
-        background: url(/assets/img/pickup-label.png)no-repeat center left;
+        background: url("../img/pickup-label.png")no-repeat center left;
         background-size: 100% auto;
         content: "カテゴリ";
         position: absolute;
@@ -161,7 +161,7 @@
 .news__list-img {
     position: relative;
     &::before {
-        background: url(/assets/img/pickup-label.png)no-repeat center left;
+        background: url("../img/pickup-label.png")no-repeat center left;
         background-size: 100% auto;
         content: "カテゴリ";
         position: absolute;

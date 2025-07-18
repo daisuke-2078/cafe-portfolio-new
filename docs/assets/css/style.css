@@ -271,7 +271,7 @@ body {
   position: relative;
 }
 .l-access__title::before {
-  background: url(/assets/img/access-icon.png) no-repeat center left;
+  background: url("../img/access-icon.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 172.134px;
@@ -297,7 +297,7 @@ body {
   }
 }
 .l-access__title::after {
-  background: url(/assets/img/access-bg.png) no-repeat center right;
+  background: url("../img/access-bg.png") no-repeat center right;
   background-size: 100% auto;
   content: "";
   height: 180px;
@@ -539,7 +539,7 @@ body {
   width: 100%;
 }
 .l-footer::before {
-  background: url(/assets/img/footer-beans.png) no-repeat center left;
+  background: url("../img/footer-beans.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 114px;
@@ -550,7 +550,7 @@ body {
 }
 @media (min-width: 1280px) {
   .l-footer::before {
-    background: url(/assets/img/bg_coffee-beans.png) no-repeat center left;
+    background: url("../img/bg_coffee-beans.png") no-repeat center left;
     background-size: 100% auto;
     content: "";
     height: 287px;
@@ -562,7 +562,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .l-footer::before {
-    background: url(/assets/img/bg_coffee-beans.png) no-repeat center left;
+    background: url("../img/bg_coffee-beans.png") no-repeat center left;
     background-size: 100% auto;
     content: "";
     height: 200px;
@@ -605,7 +605,7 @@ body {
 }
 
 .l-to__top {
-  background: url(/assets/img/to-top.png) no-repeat center;
+  background: url("../img/to-top.png") no-repeat center;
   background-size: 100% auto;
   bottom: 20px;
   height: 44px;
@@ -685,7 +685,7 @@ body {
   width: 100%;
 }
 .c-section__btn::after {
-  background: url(/assets/img/arrow-right.png) no-repeat center right/7.81px 13.6px;
+  background: url("../img/arrow-right.png") no-repeat center right/7.81px 13.6px;
   content: "";
   height: 13.6px;
   position: absolute;
@@ -1015,7 +1015,7 @@ body {
 }
 
 .front__mv-logo-title {
-  background: url(/assets/img/logo-title-sp.png) no-repeat top left/113.502px 47.752px;
+  background: url("../img/logo-title-sp.png") no-repeat top left/113.502px 47.752px;
   height: 47.752px;
   margin-left: 20px;
   margin-top: 20px;
@@ -1024,7 +1024,7 @@ body {
 }
 @media (min-width: 1280px) {
   .front__mv-logo-title {
-    background: url(/assets/img/logo-title-pc.png) no-repeat top left/154px 64px;
+    background: url("../img/logo-title-pc.png") no-repeat top left/154px 64px;
     height: 64px;
     margin-left: 8px;
     margin-top: 27px;
@@ -1034,7 +1034,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .front__mv-logo-title {
-    background: url(/assets/img/logo-title-pc.png) no-repeat top left/154px 64px;
+    background: url("../img/logo-title-pc.png") no-repeat top left/154px 64px;
     height: 64px;
     margin-left: 8px;
     margin-top: 27px;
@@ -1044,7 +1044,7 @@ body {
 }
 
 .front__mv-subtitle {
-  background: url(/assets/img/logo-sub-title-sp.png) no-repeat top left/65.815px 6.119px;
+  background: url("../img/logo-sub-title-sp.png") no-repeat top left/65.815px 6.119px;
   height: 6.119px;
   margin-left: -73px;
   margin-top: 70px;
@@ -1052,7 +1052,7 @@ body {
 }
 @media (min-width: 1280px) {
   .front__mv-subtitle {
-    background: url(/assets/img/logo-sub-title-pc.png) no-repeat top left/89.85px 8.26px;
+    background: url("../img/logo-sub-title-pc.png") no-repeat top left/89.85px 8.26px;
     height: 8.26px;
     margin-left: -100px;
     margin-top: 85px;
@@ -1061,7 +1061,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .front__mv-subtitle {
-    background: url(/assets/img/logo-sub-title-pc.png) no-repeat top left/89.85px 8.26px;
+    background: url("../img/logo-sub-title-pc.png") no-repeat top left/89.85px 8.26px;
     height: 8.26px;
     margin-left: -100px;
     margin-top: 85px;
@@ -1323,7 +1323,7 @@ body {
 }
 
 .drawer__logo-title {
-  background: url(/assets/img/logo-title-sp.png) no-repeat top left/113.502px 47.752px;
+  background: url("../img/logo-title-sp.png") no-repeat top left/113.502px 47.752px;
   height: 47.752px;
   margin-top: -21px;
   transform: rotate(-8deg);
@@ -1331,7 +1331,7 @@ body {
 }
 
 .drawer__subtitle {
-  background: url(/assets/img/logo-sub-title-sp.png) no-repeat top left/65.815px 6.119px;
+  background: url("../img/logo-sub-title-sp.png") no-repeat top left/65.815px 6.119px;
   height: 6.119px;
   margin-left: -73px;
   margin-top: 30px;
@@ -1574,7 +1574,7 @@ body {
   padding: 0 20px;
 }
 .concept__left::before {
-  background: url(/assets/img/bg_coffee-beans.png) no-repeat left top;
+  background: url("../img/bg_coffee-beans.png") no-repeat left top;
   background-size: 100% auto;
   content: "";
   height: 130px;
@@ -1744,7 +1744,7 @@ body {
   }
 }
 .concept__right::after {
-  background: url(/assets/img/bg_coffee-leaves.png) no-repeat left center;
+  background: url("../img/bg_coffee-leaves.png") no-repeat left center;
   background-size: 100% auto;
   content: "";
   height: 135px;
@@ -1824,7 +1824,7 @@ body {
   }
 }
 .lunch__menu::before {
-  background: url(/assets/img/lunch-menu-bg.png) no-repeat center;
+  background: url("../img/lunch-menu-bg.png") no-repeat center;
   background-size: 100% auto;
   content: "";
   height: 93.591px;
@@ -1852,7 +1852,7 @@ body {
   }
 }
 .lunch__menu::after {
-  background: url(/assets/img/lunch-menu-bg-text.png) no-repeat center;
+  background: url("../img/lunch-menu-bg-text.png") no-repeat center;
   background-size: 100% auto;
   content: "";
   height: 32.712px;
@@ -1944,7 +1944,7 @@ body {
   }
 }
 .menu__choice-text::before {
-  background: url(/assets/img/menu-choice-text1.png) no-repeat left center;
+  background: url("../img/menu-choice-text1.png") no-repeat left center;
   background-size: 100% auto;
   content: "";
   height: 32.3px;
@@ -1966,7 +1966,7 @@ body {
   }
 }
 .menu__choice-text::after {
-  background: url(/assets/img/menu-choice-text2.png) no-repeat left center;
+  background: url("../img/menu-choice-text2.png") no-repeat left center;
   background-size: 100% auto;
   content: "";
   height: 32.3px;
@@ -2343,7 +2343,7 @@ body {
   }
 }
 .set__custom-salad::before {
-  background: url(/assets/img/plus-icon.png) no-repeat center;
+  background: url("../img/plus-icon.png") no-repeat center;
   background-size: 100% auto;
   content: "";
   height: 13.323px;
@@ -2369,7 +2369,7 @@ body {
   }
 }
 .set__custom-salad::after {
-  background: url(/assets/img/plus-icon.png) no-repeat center;
+  background: url("../img/plus-icon.png") no-repeat center;
   background-size: 100% auto;
   content: "";
   height: 13.323px;
@@ -2552,7 +2552,7 @@ body {
   position: relative;
 }
 .grand-menu__title::before {
-  background: url(/assets/img/grand-menu-leaves.png) no-repeat center left;
+  background: url("../img/grand-menu-leaves.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 141px;
@@ -2967,7 +2967,7 @@ body {
   }
 }
 .grand__menu-btn::after {
-  background: url(/assets/img/grand-menu-beans-bg.png) no-repeat center right;
+  background: url("../img/grand-menu-beans-bg.png") no-repeat center right;
   background-size: 100% auto;
   content: "";
   height: 142.875px;
@@ -3015,7 +3015,7 @@ body {
   }
 }
 .gallery::before {
-  background: url(/assets/img/gallery-icon.png) no-repeat center left;
+  background: url("../img/gallery-icon.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 104.168px;
@@ -3113,7 +3113,7 @@ body {
   position: relative;
 }
 .news::before {
-  background: url(/assets/img/news-bg.png) no-repeat center left;
+  background: url("../img/news-bg.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 185.071px;
@@ -3172,7 +3172,7 @@ body {
   position: relative;
 }
 .news__top-img::before {
-  background: url(/assets/img/pickup-label.png) no-repeat center left;
+  background: url("../img/pickup-label.png") no-repeat center left;
   background-size: 100% auto;
   color: #FFF;
   content: "カテゴリ";
@@ -3280,7 +3280,7 @@ body {
   position: relative;
 }
 .news__list-img::before {
-  background: url(/assets/img/pickup-label.png) no-repeat center left;
+  background: url("../img/pickup-label.png") no-repeat center left;
   background-size: 100% auto;
   color: #FFF;
   content: "カテゴリ";
@@ -3358,18 +3358,18 @@ body {
 }
 
 .concept__header {
-  background: url(/assets/img/header-concept_sp.png) no-repeat center center;
+  background: url("../img/header-concept_sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .concept__header {
-    background: url(/assets/img/header-concept_pc.png) no-repeat center center;
+    background: url("../img/header-concept_pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .concept__header {
-    background: url(/assets/img/header-concept_pc.png) no-repeat center center;
+    background: url("../img/header-concept_pc.png") no-repeat center center;
     background-size: 100% 100%;
   }
 }
@@ -3771,18 +3771,18 @@ body {
 }
 
 .menu__header {
-  background: url(/assets/img/header-menu_sp.png) no-repeat center center;
+  background: url("../img/header-menu_sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .menu__header {
-    background: url(/assets/img/header-menu-pc.png) no-repeat center center;
+    background: url("../img/header-menu-pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .menu__header {
-    background: url(/assets/img/header-menu-pc.png) no-repeat center center;
+    background: url("../img/header-menu-pc.png") no-repeat center center;
     background-size: 100% 100%;
   }
 }
@@ -3949,18 +3949,18 @@ body {
 }
 
 .news__header {
-  background: url(/assets/img/header-news-sp.png) no-repeat center center;
+  background: url("../img/header-news-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .news__header {
-    background: url(/assets/img/header-news-pc.png) no-repeat center center;
+    background: url("../img/header-news-pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .news__header {
-    background: url(/assets/img/header-news-pc.png) no-repeat center center;
+    background: url("../img/header-news-pc.png") no-repeat center center;
     background-size: 100% 100%;
   }
 }
@@ -4047,7 +4047,7 @@ body {
   width: 100%;
 }
 .left__category-img::before {
-  background: url(/assets/img/pickup-label.png) no-repeat center left;
+  background: url("../img/pickup-label.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 22px;
@@ -4307,7 +4307,7 @@ body {
   padding-left: 10px;
 }
 .side__category-text::before {
-  background: url(/assets/img/side-category-icon.png) no-repeat center left;
+  background: url("../img/side-category-icon.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 12px;
@@ -4322,18 +4322,18 @@ body {
 }
 
 .news__header {
-  background: url(/assets/img/header-news-sp.png) no-repeat center center;
+  background: url("../img/header-news-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .news__header {
-    background: url(/assets/img/header-news-pc.png) no-repeat center center;
+    background: url("../img/header-news-pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .news__header {
-    background: url(/assets/img/header-news-pc.png) no-repeat center center;
+    background: url("../img/header-news-pc.png") no-repeat center center;
     background-size: 100% 100%;
   }
 }
@@ -4696,7 +4696,7 @@ body {
   padding-left: 16px;
 }
 .news__contents-pagination-button-l::before {
-  background: url(/assets/img/left-icon.png) no-repeat center left;
+  background: url("../img/left-icon.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 12px;
@@ -4720,7 +4720,7 @@ body {
   padding-right: 16px;
 }
 .news__contents-pagination-button-r::after {
-  background: url(/assets/img/right-icon.png) no-repeat center left;
+  background: url("../img/right-icon.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 12px;
@@ -4835,7 +4835,7 @@ body {
   position: relative;
 }
 .related__articles-img::before {
-  background: url(/assets/img/pickup-label.png) no-repeat center left;
+  background: url("../img/pickup-label.png") no-repeat center left;
   background-size: 100% auto;
   content: "";
   height: 22px;
@@ -4915,7 +4915,7 @@ body {
 }
 
 .shop-list__header {
-  background: url(/assets/img/shop-list-sp.png) no-repeat center center;
+  background: url("../img/shop-list-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
@@ -5037,18 +5037,18 @@ body {
 }
 
 .gift__header {
-  background: url(/assets/img/gift-sp.png) no-repeat center center;
+  background: url("../img/gift-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .gift__header {
-    background: url(/assets/img/gift-pc.png) no-repeat center center;
+    background: url("../img/gift-pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .gift__header {
-    background: url(/assets/img/gift-pc.png) no-repeat center center;
+    background: url("../img/gift-pc.png") no-repeat center center;
   }
 }
 
@@ -5278,18 +5278,18 @@ body {
 }
 
 .contact__header {
-  background: url(/assets/img/contact-sp.png) no-repeat center center;
+  background: url("../img/contact-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .contact__header {
-    background: url(/assets/img/contact-pc.png) no-repeat center center;
+    background: url("../img/contact-pc.png") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .contact__header {
-    background: url(/assets/img/contact-pc.png) no-repeat center center;
+    background: url("../img/contact-pc.png") no-repeat center center;
   }
 }
 
@@ -5728,18 +5728,18 @@ input[type=tel]::placeholder {
 }
 
 .contact__completion-header {
-  background: url(/assets/img/contact-sp.png) no-repeat center center;
+  background: url("../img/contact-sp.png") no-repeat center center;
   background-size: 100% auto;
 }
 @media (min-width: 1280px) {
   .contact__completion-header {
-    background: url(/assets/img/contact-pc.png) no-repeat center center;
+    background: url("../img/contact-pc.png2") no-repeat center center;
     background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .contact__completion-header {
-    background: url(/assets/img/contact-pc.png) no-repeat center center;
+    background: url("../img/contact-pc.png") no-repeat center center;
   }
 }
 

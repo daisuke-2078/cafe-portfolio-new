@@ -23,7 +23,7 @@
     position: relative;
 
     &::before {
-        background: url(/assets/img/access-icon.png)no-repeat center left;
+        background: url("../img/access-icon.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -48,7 +48,7 @@
     }
 
     &::after {
-        background: url(/assets/img/access-bg.png)no-repeat center right;
+        background: url("../img/access-bg.png")no-repeat center right;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -269,7 +269,7 @@
     position: relative;
 
     &::before {
-        background: url(/assets/img/footer-beans.png)no-repeat center left;
+        background: url("../img/footer-beans.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -279,7 +279,7 @@
         left: -35px;
 
         @include mq(pc) {
-            background: url(/assets/img/bg_coffee-beans.png)no-repeat center left;
+            background: url("../img/bg_coffee-beans.png")no-repeat center left;
             background-size: 100% auto;
             content: "";
             position: absolute;
@@ -290,7 +290,7 @@
         }
 
         @include mq(tab) {
-            background: url(/assets/img/bg_coffee-beans.png)no-repeat center left;
+            background: url("../img/bg_coffee-beans.png")no-repeat center left;
             background-size: 100% auto;
             content: "";
             position: absolute;
@@ -339,6 +339,6 @@
   bottom: 20px;
   width: 44px;
   height: 44px;
-  background: url(/assets/img/to-top.png) no-repeat center;
+  background: url("../img/to-top.png") no-repeat center;
   background-size: 100% auto;
 }

@@ -246,7 +246,7 @@
 }
 
 .front__mv-logo-title {
-  background: url(/assets/img/logo-title-sp.png) no-repeat top left / 113.502px 47.752px;
+  background: url("../img/logo-title-sp.png") no-repeat top left / 113.502px 47.752px;
   width: 113.502px;
   height: 47.752px;
   transform: rotate(-8deg);
@@ -254,7 +254,7 @@
   margin-left: 20px;
 
   @include mq(pc) {
-    background: url(/assets/img/logo-title-pc.png) no-repeat top left / 154px 64px;
+    background: url("../img/logo-title-pc.png") no-repeat top left / 154px 64px;
     width: 154px;
     height: 64px;
     margin-left: 8px;
@@ -263,7 +263,7 @@
   }
 
   @include mq(tab) {
-    background: url(/assets/img/logo-title-pc.png) no-repeat top left / 154px 64px;
+    background: url("../img/logo-title-pc.png") no-repeat top left / 154px 64px;
     width: 154px;
     height: 64px;
     margin-left: 8px;
@@ -273,14 +273,14 @@
 }
 
 .front__mv-subtitle {
-  background: url(/assets/img/logo-sub-title-sp.png)no-repeat top left / 65.815px 6.119px;
+  background: url("../img/logo-sub-title-sp.png")no-repeat top left / 65.815px 6.119px;
   width: 65.815px;
   height: 6.119px;
   margin-left: -73px;
   margin-top: 70px;
 
   @include mq(pc) {
-    background: url(/assets/img/logo-sub-title-pc.png)no-repeat top left / 89.85px 8.26px;
+    background: url("../img/logo-sub-title-pc.png")no-repeat top left / 89.85px 8.26px;
     width: 89.85px;
     height: 8.26px;
     margin-top: 85px;
@@ -288,7 +288,7 @@
   }
 
   @include mq(tab) {
-    background: url(/assets/img/logo-sub-title-pc.png)no-repeat top left / 89.85px 8.26px;
+    background: url("../img/logo-sub-title-pc.png")no-repeat top left / 89.85px 8.26px;
     width: 89.85px;
     height: 8.26px;
     margin-top: 85px;
@@ -554,7 +554,7 @@
 }
 
 .drawer__logo-title {
-  background: url(/assets/img/logo-title-sp.png) no-repeat top left / 113.502px 47.752px;
+  background: url("../img/logo-title-sp.png") no-repeat top left / 113.502px 47.752px;
   width: 113.502px;
   height: 47.752px;
   transform: rotate(-8deg);
@@ -562,7 +562,7 @@
 }
 
 .drawer__subtitle {
-  background: url(/assets/img/logo-sub-title-sp.png)no-repeat top left / 65.815px 6.119px;
+  background: url("../img/logo-sub-title-sp.png")no-repeat top left / 65.815px 6.119px;
   width: 65.815px;
   height: 6.119px;
   margin-left: -73px;

@@ -2,16 +2,16 @@
 @use "../global/mixin" as *;
 
 .contact__completion-header {
-    background: url(/assets/img/contact-sp.png)no-repeat center center;
+    background: url("../img/contact-sp.png")no-repeat center center;
     background-size: 100% auto;
 
     @include mq(pc) {
-        background: url(/assets/img/contact-pc.png)no-repeat center center;
+        background: url("../img/contact-pc.png2")no-repeat center center;
         background-size: 100% auto;
     }
 
     @include mq(tab) {
-        background: url(/assets/img/contact-pc.png)no-repeat center center;
+        background: url("../img/contact-pc.png")no-repeat center center;
     }
 }
 

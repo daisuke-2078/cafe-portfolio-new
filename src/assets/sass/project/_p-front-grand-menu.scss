@@ -33,7 +33,7 @@
     position: relative;
 
     &::before {
-        background: url(/assets/img/grand-menu-leaves.png)no-repeat center left;
+        background: url("../img/grand-menu-leaves.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         width: 128.365px;
@@ -422,7 +422,7 @@
     }
 
     &::after {
-        background: url(/assets/img/grand-menu-beans-bg.png)no-repeat center right;
+        background: url("../img/grand-menu-beans-bg.png")no-repeat center right;
         background-size: 100% auto;
         content: "";
         position: absolute;

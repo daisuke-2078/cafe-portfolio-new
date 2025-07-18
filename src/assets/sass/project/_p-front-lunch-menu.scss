@@ -23,7 +23,7 @@
     }
 
     &::before {
-        background: url(/assets/img/lunch-menu-bg.png)no-repeat center;
+        background: url("../img/lunch-menu-bg.png")no-repeat center;
         background-size: 100% auto;
         content: "";
         width: 200px;
@@ -50,7 +50,7 @@
     }
 
     &::after {
-        background: url(/assets/img/lunch-menu-bg-text.png)no-repeat center;
+        background: url("../img/lunch-menu-bg-text.png")no-repeat center;
         background-size: 100% auto;
         content: "";
         width: 140.226px;
@@ -136,7 +136,7 @@
     }
 
     &::before {
-        background: url(/assets/img/menu-choice-text1.png)no-repeat left center;
+        background: url("../img/menu-choice-text1.png")no-repeat left center;
         background-size: 100% auto;
         content: "";
         width: 28.653px;
@@ -157,7 +157,7 @@
     }
 
     &::after {
-        background: url(/assets/img/menu-choice-text2.png)no-repeat left center;
+        background: url("../img/menu-choice-text2.png")no-repeat left center;
         background-size: 100% auto;
         content: "";
         width: 28.653px;
@@ -499,7 +499,7 @@
     }
 
     &::before {
-        background: url(/assets/img/plus-icon.png) no-repeat center;
+        background: url("../img/plus-icon.png") no-repeat center;
         background-size: 100% auto;
         content: "";
         width: 13.359px;
@@ -524,7 +524,7 @@
     }
 
     &::after {
-        background: url(/assets/img/plus-icon.png) no-repeat center;
+        background: url("../img/plus-icon.png") no-repeat center;
         background-size: 100% auto;
         content: "";
         width: 13.359px;

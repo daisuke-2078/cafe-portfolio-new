@@ -2,7 +2,7 @@
 @use "../global/mixin" as *;
 
 .shop-list__header {
-    background: url(/assets/img/shop-list-sp.png)no-repeat center center;
+    background: url("../img/shop-list-sp.png")no-repeat center center;
     background-size: 100% auto;
 
     @include mq(pc) {

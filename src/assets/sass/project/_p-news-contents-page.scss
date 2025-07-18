@@ -2,16 +2,16 @@
 @use "../global/mixin" as *;
 
 .news__header {
-    background: url(/assets/img/header-news-sp.png)no-repeat center center;
+    background: url("../img/header-news-sp.png")no-repeat center center;
     background-size: 100% auto;
 
     @include mq(pc) {
-        background: url(/assets/img/header-news-pc.png)no-repeat center center;
+        background: url("../img/header-news-pc.png")no-repeat center center;
         background-size: 100% auto;
     }
 
     @include mq(tab) {
-        background: url(/assets/img/header-news-pc.png)no-repeat center center;
+        background: url("../img/header-news-pc.png")no-repeat center center;
         background-size: 100% 100%;
     }
 }
@@ -359,7 +359,7 @@
     padding-left: 16px;
 
     &::before {
-        background: url(/assets/img/left-icon.png)no-repeat center left;
+        background: url("../img/left-icon.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -382,7 +382,7 @@
     padding-right: 16px;
 
     &::after {
-        background: url(/assets/img/right-icon.png)no-repeat center left;
+        background: url("../img/right-icon.png")no-repeat center left;
         background-size: 100% auto;
         content: "";
         position: absolute;
@@ -488,7 +488,7 @@
     position: relative;
 
     &::before {
-        background: url(/assets/img/pickup-label.png) no-repeat center left;
+        background: url("../img/pickup-label.png") no-repeat center left;
         background-size: 100% auto;
         content: "";
         height: 22px;

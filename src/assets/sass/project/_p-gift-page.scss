@@ -2,16 +2,16 @@
 @use "../global/mixin" as *;
 
 .gift__header {
-    background: url(/assets/img/gift-sp.png)no-repeat center center;
+    background: url("../img/gift-sp.png")no-repeat center center;
     background-size: 100% auto;
 
     @include mq(pc) {
-        background: url(/assets/img/gift-pc.png)no-repeat center center;
+        background: url("../img/gift-pc.png")no-repeat center center;
         background-size: 100% auto;
     }
 
     @include mq(tab) {
-        background: url(/assets/img/gift-pc.png)no-repeat center center;
+        background: url("../img/gift-pc.png")no-repeat center center;
     }
 }
 

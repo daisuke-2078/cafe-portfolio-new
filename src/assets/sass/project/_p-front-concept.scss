@@ -37,7 +37,7 @@
     margin-top: 120px;
 
     &::before {
-      background: url(/assets/img/bg_coffee-beans.png)no-repeat left top;
+      background: url("../img/bg_coffee-beans.png")no-repeat left top;
       background-size: 100% auto;
       content: "";
       position: absolute;
@@ -195,7 +195,7 @@
   }
 
   &::after {
-    background: url(/assets/img/bg_coffee-leaves.png)no-repeat left center;
+    background: url("../img/bg_coffee-leaves.png")no-repeat left center;
     background-size: 100% auto;
     content: "";
     position: absolute;

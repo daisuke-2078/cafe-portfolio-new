@@ -19,7 +19,7 @@
     }
 
     &::before {
-        background: url(/assets/img/gallery-icon.png)no-repeat center left;
+        background: url("../img/gallery-icon.png")no-repeat center left;
         background-size: 100% auto;
         position: absolute;
         content: "";
