@@ -27,13 +27,6 @@ function copyJs() {
         .on('end', browserSync.reload);
 }
 
-// ✅ 画像のコピー
-function copyImages() {
-    return gulp.src("./src/assets/img/**/*")
-        .pipe(gulp.dest("./docs/assets/img/"))
-        .on('end', browserSync.reload);
-}
-
 // ✅ ローカルサーバー起動
 function serve(done) {
     browserSync.init({
@@ -52,7 +45,6 @@ function serve(done) {
 function watch() {
     gulp.watch("./src/assets/sass/**/*.scss", compileSass);
     gulp.watch("./src/assets/js/**/*.js", copyJs);
-    gulp.watch("./src/assets/img/**/*", copyImages); // 追加！
 }
 
 // ✅ デフォルトタスク
@@ -63,4 +55,4 @@ exports.default = gulp.series(
 );
 
 // ✅ Netlify用ビルドタスク（本番ビルド用）
-exports.build = gulp.parallel(compileSass, copyJs, copyImages);
+exports.build = gulp.parallel(compileSass, copyJs);
